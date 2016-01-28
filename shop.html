@@ -4,18 +4,16 @@
 <head>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='css/style.css">
-  <title>Барбершоп «Бородинский»</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <title>Магазин Барбершоп</title>
 </head>
 
 <body>
   <header class="main-header">
     <div class="container">
+      <a class="header-logo" href="index.html"><img src="img/header_logo.png" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
       <nav class="main-navigation">
         <ul>
-          <li class="header-logo">
-            <a href="index.html"><img src="img/header_logo.png" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
-          </li>
           <li>
             <a href="#">Информация</a>
           </li>
@@ -25,7 +23,7 @@
           <li>
             <a href="price.html">Прайс-лист</a>
           </li>
-          <li>
+          <li class="active-page">
             <a href="#">Магазин</a>
           </li>
           <li>
@@ -43,51 +41,56 @@
     <ul class="breadcrumbs">
       <li><a href="#">Главная</a></li>
       <li><a href="#">Магазин</a></li>
-      <li><a href="#">Средства для ухода</a></li>
+      <li class="active-item"><a href="#">Средства для ухода</a></li>
     </ul>
     <div class="left-column">
-      <div class="left-column-filter">
-        <h2>Производитель</h2>
-        <ul>
-          <li>
-            <input id="boc-id" type="checkbox" checked>
-            <label for="boc-id">Baxter of California</label>
-          </li>
-          <li>
-            <input id="mn-id" type="checkbox">
-            <label for="mn-id">Mr Natty</label>
-          </li>
-          <li>
-            <input id="s-id" type="checkbox" checked>
-            <label for="s-id">Suavecito</label>
-          </li>
-          <li>
-            <input id="mg-id" type="checkbox">
-            <label for="mg-id">Malin+Goeltz</label>
-          </li>
-          <li>
-            <input id="m-id" type="checkbox">
-            <label for="m-id">Murray's</label>
-          </li>
-          <li>
-            <input id="ac-id" type="checkbox" checked>
-            <label for="ac-id">American Crew</label>
-          </li>
-        </ul>
-      </div>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <div class="left-column-filter">
+          <h2>Производители</h2>
+          <ul>
+            <li>
+              <input id="boc-id" type="checkbox" checked>
+              <label for="boc-id">Baxter of California</label>
+            </li>
+            <li>
+              <input id="mn-id" type="checkbox">
+              <label for="mn-id">Mr Natty</label>
+            </li>
+            <li>
+              <input id="s-id" type="checkbox" checked>
+              <label for="s-id">Suavecito</label>
+            </li>
+            <li>
+              <input id="mg-id" type="checkbox">
+              <label for="mg-id">Malin+Goeltz</label>
+            </li>
+            <li>
+              <input id="m-id" type="checkbox">
+              <label for="m-id">Murray's</label>
+            </li>
+            <li>
+              <input id="ac-id" type="checkbox" checked>
+              <label for="ac-id">American Crew</label>
+            </li>
+          </ul>
+        </div>
+      </form>
       <div class="left-column-group">
         <ul>
           <li>
-            <label for="p1-id">
-              <input id="p1-id" type="radio" value="p1" checked>Бритвенные принадлежности</label>
+
+            <input id="p1-id" type="radio" value="p1" checked>
+            <label for="p1-id">Бритвенные принадлежности</label>
           </li>
           <li>
-            <label for="p2-id">
-              <input id="p2-id" type="radio" value="p2">Средства для ухода</label>
+
+            <input id="p2-id" type="radio" value="p2">
+            <label for="p2-id">Средства для ухода</label>
           </li>
           <li>
-            <label for="p3-id">
-              <input id="p3-id" type="radio" value="p3">Аксессуары</label>
+
+            <input id="p3-id" type="radio" value="p3">
+            <label for="p3-id">Аксессуары</label>
           </li>
         </ul>
         <input type="submit" name="show" value="Показать">
@@ -95,9 +98,9 @@
     </div>
     <div class="products-page">
       <div class="shop-item">
-        <img src="img/shop_item_1.jpg" width="220" height="165" alt="Набор для путешествий Baxter of California">
-        <p>Набор для путешествий
-          <br/> Baxter of California</p>
+        <a href="dexter-ae.html"><img src="img/shop_item_1.jpg" width="220" height="165" alt="Набор для путешествий Baxter of California"></a>
+        <p><a href="dexter-ae.html">Набор для путешествий
+          <br/> Baxter of California</a></p>
         <div class="buy-button">
           <span class="price">2 900 руб.</span>
           <a href="dexter-ae.html" class="buy-btn">Купить</a>
