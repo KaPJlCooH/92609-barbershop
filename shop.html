@@ -10,10 +10,10 @@
 
 <body>
   <header class="main-header">
-    <div class="container">
+    <div class="container clearfix">
       <a class="header-logo" href="index.html"><img src="img/header_logo.png" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
       <nav class="main-navigation">
-        <ul>
+        <ul class="main-menu">
           <li>
             <a href="#">Информация</a>
           </li>
@@ -46,49 +46,52 @@
     <div class="left-column">
       <form action="https://echo.htmlacademy.ru/" method="post">
         <div class="left-column-filter">
-          <h2>Производители</h2>
-          <ul>
-            <li>
-              <input id="boc-id" type="checkbox" name="boc" checked>
-              <label for="boc-id">Baxter of California</label>
-            </li>
-            <li>
-              <input id="mn-id" type="checkbox" name="mn">
-              <label for="mn-id">Mr Natty</label>
-            </li>
-            <li>
-              <input id="s-id" type="checkbox" name="s" checked>
-              <label for="s-id">Suavecito</label>
-            </li>
-            <li>
-              <input id="mg-id" type="checkbox" name="mg">
-              <label for="mg-id">Malin+Goeltz</label>
-            </li>
-            <li>
-              <input id="m-id" type="checkbox" name="m">
-              <label for="m-id">Murray's</label>
-            </li>
-            <li>
-              <input id="ac-id" type="checkbox" name="ac" checked>
-              <label for="ac-id">American Crew</label>
-            </li>
-          </ul>
-        </div>
-        <div class="left-column-group">
-          <ul>
-            <li>
-              <input id="p1-id" type="radio" value="p1" name="p1" checked>
-              <label for="p1-id">Бритвенные принадлежности</label>
-            </li>
-            <li>
-              <input id="p2-id" type="radio" value="p2" name="p2">
-              <label for="p2-id">Средства для ухода</label>
-            </li>
-            <li>
-              <input id="p3-id" type="radio" value="p3" name="p3">
-              <label for="p3-id">Аксессуары</label>
-            </li>
-          </ul>
+          <fieldset>
+            <legend>Производители</legend>
+            <ul class="no-style">
+              <li>
+                <input id="boc-id" type="checkbox" name="boc" checked>
+                <label for="boc-id">Baxter of California</label>
+              </li>
+              <li>
+                <input id="mn-id" type="checkbox" name="mn">
+                <label for="mn-id">Mr Natty</label>
+              </li>
+              <li>
+                <input id="s-id" type="checkbox" name="s" checked>
+                <label for="s-id">Suavecito</label>
+              </li>
+              <li>
+                <input id="mg-id" type="checkbox" name="mg">
+                <label for="mg-id">Malin+Goeltz</label>
+              </li>
+              <li>
+                <input id="m-id" type="checkbox" name="m">
+                <label for="m-id">Murray's</label>
+              </li>
+              <li>
+                <input id="ac-id" type="checkbox" name="ac" checked>
+                <label for="ac-id">American Crew</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Группы товаров</legend>
+            <ul class="no-style">
+              <li>
+                <input id="p1-id" type="radio" value="p1" name="p1" checked>
+                <label for="p1-id">Бритвенные принадлежности</label>
+              </li>
+              <li>
+                <input id="p2-id" type="radio" value="p2" name="p2">
+                <label for="p2-id">Средства для ухода</label>
+              </li>
+              <li>
+                <input id="p3-id" type="radio" value="p3" name="p3">
+                <label for="p3-id">Аксессуары</label>
+              </li>
+            </ul>
+          </fieldset>
           <input type="submit" value="Показать">
         </div>
       </form>
@@ -151,7 +154,7 @@
       </div>
     </div>
     <div class="pages-buttons">
-      <ul>
+      <ul class="no-style main-menu">
         <li class="page-button"><a href="#">1</a></li>
         <li class="page-button"><a class="page-active" href="#">2</a></li>
         <li class="page-button"><a href="#">3</a></li>
