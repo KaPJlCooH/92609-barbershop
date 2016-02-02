@@ -29,8 +29,8 @@ h2 {
   /*для сетки*/
   background: #f8f5f2;
 }
-.main-header {
-  margin-bottom: 60px;
+.main-header .container {
+  background: black;
 }
 .main-menu li {
   list-style: none;
@@ -42,6 +42,10 @@ h2 {
   float: left;
   width: 111px;
   min-height: 24px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 15px;
 }
 .main-navigation {
   float: left;
@@ -52,6 +56,10 @@ h2 {
   float: right;
   width: 140px;
   min-height: 70px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 15px;
 }
 .index-logo {
   width: 368px;
@@ -96,8 +104,8 @@ h2 {
   min-height: 330px;
 }
 .main-footer {
-  margin-top: 65px;
-  padding-top: 60px;
+  /*margin-top: 65px;*/
+  /*padding-top: 60px;*/
   padding-bottom: 40px;
 }
 .footer-contacts {
@@ -121,7 +129,6 @@ h2 {
   width: 220px;
   margin-right: 10px;
 }
-
 .shop-item {
   display: inline-block;
   vertical-align: top;
@@ -131,7 +138,7 @@ h2 {
   height: 286px;
   box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
-.shop-item:nth-child(3n){
+.shop-item:nth-child(3n) {
   margin-right: 0px;
 }
 .shop-item p {
@@ -147,4 +154,56 @@ h2 {
 .pages-buttons {
   margin-left: 240px;
   margin-top: 30px;
+}
+.big-title {
+  text-align: center;
+  padding: 55px 0;
+}
+.left-column-price {
+  float: left;
+  width: 40%;
+  padding-right: 90px;
+}
+.right-column-price {
+  float: left;
+  width: 50%;
+}
+.item-gallery {
+  float: left;
+  width: 480px;
+  padding-right: 60px;
+  padding-top: 60px;
+}
+.non-active-item-gallery li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.non-active-item-gallery ul {
+  font-size: 0;
+  padding-left: 0;
+}
+.item-info {
+  float: left;
+  width: 400px;
+}
+.right-column-price caption {
+  width: 162px;
+  text-align: left;
+}
+.right-column-price table {
+  padding-bottom: 50px;
+}
+.item-have {
+  padding-top: 80px;
+}
+.item-have p:nth-child(1) {
+  float: left;
+}
+.item-have p:nth-child(2) {
+  float: right;
+}
+.item-info h3 {
+  padding-top: 60px;
 }
